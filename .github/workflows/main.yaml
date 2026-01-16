@@ -6,5 +6,9 @@ jobs:
         steps:
             - name: Create Test Workflow
               run: echo "Create Test Workflow"
+
+            - name: checkout repository
+              uses: actions/checkout@v4
+
             - name: Continue README file
               run: cat README.md
